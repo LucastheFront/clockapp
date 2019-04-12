@@ -1,0 +1,131 @@
+html, body {
+  height: 100%; }
+
+body {
+  align-items: center;
+  background-image: url("assets/train.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; }
+
+.clock-container {
+  background-color: grey;
+  border-radius: 50%;
+  height: 400px;
+  opacity: 0.7;
+  position: absolute;
+  width: 400px; }
+
+.clock {
+  background: white;
+  border: 20px solid white;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px grey;
+  height: 300px;
+  padding: 15px;
+  position: relative;
+  width: 300px; }
+
+.clock-face {
+  height: 100%;
+  position: relative;
+  width: 100%; }
+  .clock-face__hand {
+    background: #212121;
+    height: 15px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 3.16, 0.58, 1);
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    width: 51.5%; }
+  .clock-face__middle {
+    background: #7d7d7d;
+    border-radius: 50%;
+    height: 25px;
+    position: absolute;
+    right: 46%;
+    top: 49%;
+    width: 25px; }
+  .clock-face__hour {
+    background: transparent;
+    height: 15px;
+    position: absolute;
+    top: 47%;
+    width: 100%; }
+    .clock-face__hour::after {
+      background: #212121;
+      content: "";
+      height: 15px;
+      left: 0;
+      position: absolute;
+      width: 35px; }
+    .clock-face__hour::before {
+      background: #212121;
+      content: "";
+      height: 15px;
+      position: absolute;
+      right: 0;
+      width: 35px; }
+  .clock-face__minutes {
+    background: transparent;
+    height: 15px;
+    position: absolute;
+    top: 47%;
+    transform: rotate(98deg);
+    width: 100%; }
+    .clock-face__minutes::after {
+      background: #212121;
+      content: "";
+      height: 4px;
+      left: 0;
+      position: absolute;
+      width: 20px; }
+    .clock-face__minutes::before {
+      background: #212121;
+      content: "";
+      height: 4px;
+      position: absolute;
+      right: 0;
+      width: 20px; }
+
+.second-hand {
+  background: red;
+  height: 2px;
+  top: 52%;
+  width: 34%; }
+  .second-hand::after {
+    background: red;
+    border-radius: 50%;
+    content: "";
+    height: 25px;
+    left: -12px;
+    position: absolute;
+    top: -12px;
+    width: 25px; }
+
+.hour-hand {
+  width: 30%; }
+
+.hour12 {
+  transform: rotate(90deg); }
+
+.hour1 {
+  transform: rotate(120deg); }
+
+.hour2 {
+  transform: rotate(150deg); }
+
+.hour3 {
+  transform: rotate(180deg); }
+
+.hour4 {
+  transform: rotate(210deg); }
+
+.hour5 {
+  transform: rotate(240deg); }
+
+/*# sourceMappingURL=style.css.map */
